@@ -32,15 +32,26 @@ In the ```all_urls``` section, paste the URLs of the lists you would like to wor
               "https://twitter.com/xyz/lists/list2/members/lang=en"   #Example list
              ]
 ```
+In the ```format``` section, specify the extension the result files should be in.
+```
+"format": ".abc"
+```
+Currently ```.txt``` and ```.csv``` formats are supported
 
 ### Usage
 
-Run the script in your terminal
-```python main.py```
+Run the respective script in your terminal
 
-The script will create a directory (if it doesn't already exist), called ```results``` and save the results of each list in a file corresponding to its name
+* For names, run: 
+```python names.py```
+
+* For locations, run: 
+```python locations.py```
+
+The script will create a directory (if it doesn't already exist), called ```results``` and save the results of each list in a file corresponding to its name.
+
 Example:
-```list1.csv  list2.csv```
+```list1.abc  list2.abc```
 
 ## Authors
 
