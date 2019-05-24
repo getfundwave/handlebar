@@ -5,5 +5,10 @@
     "consumer_key": "",
     "consumer_secret": ""
   },
-  "all_urls": []
+  "all_urls": [],
+  "format": ""
 }
+
+/* Supported Formats:
+  .csv
+  .txt */
