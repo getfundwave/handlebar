@@ -6,7 +6,9 @@
     "consumer_secret": ""
   },
   "all_urls": [],
-  "format": ""
+  "format": "",
+  "count_only": false,       //set to true if you only want to count the total number of handles, false by default
+  "no_metadata": false       //set to true if you do not want each URL to be further scraped for metadata
 }
 
 /* Supported Formats:

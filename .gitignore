@@ -1,0 +1,9 @@
+hk-sgp.json
+australia.json
+onetest.json
+scraper.py
+results/
+.vscode/
+__pycache__/
+venv/
+testing/
