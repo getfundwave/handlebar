@@ -8,7 +8,7 @@ import progressbar
 import time
 from bs4 import BeautifulSoup
 
-config = json.loads(open("hk-sgp.json").read())
+config = json.loads(open("settings.json").read())
 
 ACCESS_TOKEN = config['keys']['access_token']
 ACCESS_SECRET = config['keys']['access_secret']
@@ -60,7 +60,7 @@ for list_url in all_urls:
                     number = int(comma.replace(',',''))
                     todo+=number
     except Exception as e:
-        print("Something wrong with list URL")
+        print("Something is wrong with list URL")
         print(list_url + " -- " + str(e))
         continue
     counter+=1
