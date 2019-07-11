@@ -1,6 +1,6 @@
 # handlebar
 
-handlebar is written in Python and uses the Tweepy package to go call the Twitter API. With handlebar, you can obtain the following information for all the members of a the specified Twitter lists:
+**handlebar** is written in Python and uses the Twitter API and Web Scraping. With **handlebar**, you can obtain the following information for all the members of a the specified Twitter lists:
 
 1. Username
 2. Location
@@ -8,7 +8,7 @@ handlebar is written in Python and uses the Tweepy package to go call the Twitte
 4. Website URL
 5. Metadata description of above URL
 
-## Prerequisites
+### Prerequisites
 
 You will need API access and Consumer access tokens to make calls to the Twitter API.
 These can be obtained by simply signing up on their [developer page](https://developer.twitter.com/en/apply-for-access "Twitter Developer API").
