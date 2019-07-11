@@ -1,6 +1,6 @@
 # handlebar
 
-**handlebar** is written in Python and uses the Twitter API and Web Scraping. With **handlebar**, you can obtain the following information for all the members of a the specified Twitter lists:
+**handlebar** is written in Python and uses the Twitter API and Web Scraping. With **handlebar**, you can obtain the following information (if available) for all the members of the specified Twitter lists:
 
 1. Username
 2. Location
@@ -17,7 +17,7 @@ These can be obtained by simply signing up on their [developer page](https://dev
 
 1. Clone the repo.
 
-2. Install the python packages mentioned in requirements.txt.
+2. Install the python packages mentioned in ```requirements.txt```.
 
     * Using pip:
 
