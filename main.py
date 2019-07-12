@@ -8,7 +8,7 @@ import progressbar
 import time
 from bs4 import BeautifulSoup
 
-config = json.loads(open("settings.json").read())
+config = json.loads(open("hk-sgp.json").read())
 
 ACCESS_TOKEN = config['keys']['access_token']
 ACCESS_SECRET = config['keys']['access_secret']
@@ -73,10 +73,11 @@ print("Total handles to fetch: " + str(todo))
 print()
 
 if(only_count):
-    print("Count mode only. Exitting now.")
+    print("Count mode only")
+    print("Fin.")
     exit()
 
-errfile = open("results/log.txt",'w')
+errfile = open("errors.log",'w')
 
 print("Extracting now")
 print()
@@ -134,16 +135,19 @@ print("Total extracted handles = " + str(done))
 print()
 
 files_done=0
-if combine_files:
-    print("Combining into 1 file")
-    print()
-    combinebar = progressbar.ProgressBar(widgets=widgets, max_value=len(all_urls)).start()
-    with open('results/combined_file.'+extension, 'w') as outfile:
-        for fname in all_files:
-            with open(fname) as infile:
-                outfile.write(infile.read())
-            files_done+=1
-            combinebar.update(files_done)
-    combinebar.finish()
+if (not only_count):
+    if combine_files:
+        print("Combining into 1 file")
+        print()
+        combinebar = progressbar.ProgressBar(widgets=widgets, max_value=len(all_urls)).start()
+        with open('results/combined_file.'+extension, 'w') as outfile:
+            for fname in all_files:
+                with open(fname) as infile:
+                    outfile.write(infile.read())
+                files_done+=1
+                combinebar.update(files_done)
+        combinebar.finish()
 
-print("Check 'results/errors.log' for details")
+print()
+print("Finised.")
+print("Check 'errors.log' for details")
