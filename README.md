@@ -3,10 +3,11 @@
 **handlebar** is written in Python and uses the Twitter API and Web Scraping. With **handlebar**, you can obtain the following information (if available) for all the members of the specified Twitter lists:
 
 1. Username
-2. Location
-3. Bio / Description
-4. Website URL
-5. Metadata description of above URL
+2. Name
+3. Location
+4. Bio / Description
+5. Website URL
+6. Metadata description of above URL
 
 ### Prerequisites
 
@@ -57,6 +58,7 @@ These can be obtained by simply signing up on their [developer page](https://dev
 
     * Set ```count_only: true``` if you wish to only count the total handles from all the lists.
     * Set ```no_metadata: true``` if you do not wish to scrape metadata from URLs obtained from user profiles.
+    * Set ```combine_files: true``` if you wish to combine results from all the lists into one file called comibined_file.
 
 ### Usage
 

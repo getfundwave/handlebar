@@ -8,7 +8,8 @@
   "all_urls": [],
   "format": "",
   "count_only": false,       //set to true if you only want to count the total number of handles, false by default
-  "no_metadata": false       //set to true if you do not want each URL to be further scraped for metadata
+  "no_metadata": false,      //set to true if you do not want each URL to be further scraped for metadata
+  "combine_files": false     //set to true to combine results of individual lists into one file called combined_file 
 }
 
 /* Supported Formats:
