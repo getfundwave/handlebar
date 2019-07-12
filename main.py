@@ -138,7 +138,7 @@ if combine_files:
     print("Combining into 1 file")
     print()
     combinebar = progressbar.ProgressBar(widgets=widgets, max_value=len(all_urls)).start()
-    with open('combined_file.'+extension, 'w') as outfile:
+    with open('results/combined_file.'+extension, 'w') as outfile:
         for fname in all_files:
             with open(fname) as infile:
                 outfile.write(infile.read())
