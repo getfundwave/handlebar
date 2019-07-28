@@ -7,3 +7,4 @@ results/
 __pycache__/
 venv/
 testing/
+errors.log
